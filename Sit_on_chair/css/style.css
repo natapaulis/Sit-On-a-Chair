@@ -175,6 +175,157 @@ hr {
 
 /*Pricelist */
 
+.priceList{
+  height: 800px;
+  background-color: #f6f6f6;
+}
 .priceList h3 {
+  padding-top: 1.5em;
   width: 300px;
+  text-transform: uppercase;
+}
+
+.priceList-item {
+  width: 350px;
+  height: 600px;
+  margin-top: 40px;
+  border: 2px solid #9e9c9e;
+  position: relative;
+  display: inline-block;
+  float:left;
+  margin-left: 1em;
+}
+.priceList-circle, .priceList-circle div {
+  border: 2px solid #9e9c9e;
+  border-radius: 50%;
+}
+
+.priceList-item__reverse
+.priceList-circle,
+.priceList-item__reverse
+ .priceList-circle div {
+  border: 2px solid #3CB490;
+  border-radius: 50%;
+}
+
+.priceList-circle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+  }
+
+  .priceList-circle div {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #9e9c9e;
+  }
+  .priceList-item__reverse .priceList-circle {
+    background-color: #3CB490;
+
+  }
+  .priceList-item__reverse .priceList-circle div {
+    background-color: white;
+  }
+
+  .priceList-item__normal {
+    background-color: white;
+  }
+
+  .priceList-item__reverse {
+    background-color: #3CB490;
+    border: 2px solid #3CB490;
+  }
+
+  .priceList-item__normal h3 {
+    color: #3CB490;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px auto;
+  }
+
+  .priceList-item__reverse h3 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px auto;
+  }
+
+.price {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #9e9c9e;
+  margin-top: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+.priceList-item__reverse .price{
+  border: 2px solid #3CB490;
+}
+
+.price-nr {
+  color: #9e9c9e;
+  font-size: 40px;
+  margin: .4em 0 .2em;
+  text-align: center;
+}
+
+.price-nr sup {
+  font-size: 15px;
+}
+
+ .price-month {
+  color: #9e9c9e;
+  font-size: 15px;
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.service {
+  margin-top: 200px;
+}
+
+.service p {
+  width:350px;
+  height: 50px;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: #a6a4a6;
+}
+
+.service-one {
+  background-color: #d1d1d1;
+}
+.service-two {
+  background-color: #ededed;
+}
+.service-three {
+  background-color: white;
+}
+
+.priceList-item .button {
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.priceList-item__reverse .button {
+  background-color: white;
+  color: #3CB490;
 }
