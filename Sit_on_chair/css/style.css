@@ -105,9 +105,11 @@ header {
   font-size: 80px;
   font-weight: bold;
   line-height: 400px;
-  padding-left: 40px;
 }
 
+.slider-arrow-right {
+  padding-left: 70px;
+}
 
 .slider-text {
   height: 400px;
@@ -141,6 +143,8 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* Gallery section */
 
 .gallery {
   height: 400px;
@@ -328,4 +332,93 @@ hr {
 .priceList-item__reverse .button {
   background-color: white;
   color: #3CB490;
+}
+
+/*Contact part */
+
+.contact {
+  height: 500px;
+  color: #9e9c9e;
+}
+
+.contact h3 {
+  padding-top: 1.5em;
+  width: 300px;
+  text-transform: uppercase;
+}
+
+.contact-form {
+  float: left;
+  width: 700px;
+  height: 400px;
+  padding: 1em 0;
+}
+
+.contact-submit {
+  display: block;
+  float: right;
+  width:350px;
+  height: 400px;
+}
+
+input, textarea {
+  width:688px;
+  padding: 10px 0 10px 10px;
+  margin: 10px 0;
+  border: 1px solid #3CB490;
+  font-size: 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-submit__photo img {
+  display: block;
+  margin: -5px auto 16px;
+}
+
+.contact-submit__agree img {
+  border: 1px solid #3CB490;
+  margin-left: 30px;
+}
+
+.contact-submit__agree p {
+  display: inline-block;
+  width:250px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.contact-submit__agree .button {
+  width:auto;
+  font-size: 20px;
+}
+
+/* Footer section */
+
+footer {
+  clear: both;
+  color: #9e9c9e;
+}
+footer span, .social-media, .logo-bottom {
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+footer span {
+  text-transform: capitalize;
+  width: 700px;
+}
+
+.social-media{
+  margin-left: 45px;
+}
+
+.logo-bottom{
+  width: 200px;
+  margin-left: 25px;
+  text-transform: uppercase;
+  text-align: right;
+
 }
