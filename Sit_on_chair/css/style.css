@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'ralewayregular', Arial, sans-serif;
+}
+
+.main-width {
+  width:90%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: 'ralewaysemibold', Arial, sans-serif;
+  line-height: 50px;
+}
+
+.logo span {
+  color: #3CB490;
+}
+
+.dropdown-menu{
+  position:relative;
+  float: right;
+}
+
+.dropdown-menu li {
+  display:inline-block;
+  padding-left: 2em;
+  text-transform: uppercase;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content li{
+  padding: .2em 0 .2em;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: black;
+  width:100px;
+  height: 100px;
+}
+
+.slider {
+  height: 500px;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(64%, rgba(246,246,246,1)), color-stop(100%, rgba(224,224,224,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0 );
+}
+.slider-content {
+  padding-top: 100px;
+  display: inline-flex;
+}
+
+.slider-arrow-left, .slider-arrow-right {
+  height: 400px;
+  width: 50px;
+  color: #3CB490;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 400px;
+  padding-left: 40px;
+}
+
+
+.slider-text {
+  height: 400px;
+  width: 400px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.slider-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.slider-text span {
+  color: #3CB490;
+}
+
+.slider-text p {
+  text-align: center;
+}
+
+.button {
+  width: 300px;
+  height:50px;
+  border-radius: 1em;
+  margin: 0 auto;
+  background-color: #3CB490;
+  font-family: 'ralewaysemibold', Arial, sans-serif;;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gallery {
+  height: 400px;
+}
+
+.gallery-item__one, .gallery-item__two, .gallery-text {
+  display: inline-block;
+  padding-right: 60px;
+  padding-top: 30px;
+}
+
+.gallery-text {
+  width: 350px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 1px solid #bfb9bf;
+  padding: 1em;
+  font-size: 12px;
+}
+
+.gallery-text h3 {
+  width: 150px;
+}
+
+.gallery-text p {
+  color: #9e9c9e;
+}
+
+hr {
+  border: 3px solid #3CB490;
+}
+
+/*Pricelist */
+
+.priceList h3 {
+  width: 300px;
+}
