@@ -11,15 +11,18 @@
     <nav class="main-width">
       <span class="logo"> Sit <span> <b> on </b> </span> chair </span>
       <ul class="dropdown-menu">
-        <li class="dropdown"> O firmie
-          <ul class="dropdown-content">
-            <li> Aktualności </li>
-            <li> Nasz team </li>
-            <li> Historia </li>
-          </ul>
+        <li class="dropdown"> About Us
+          <div class="dropdown-content">
+            <div class="dropdown-triangle"></div>
+            <div class="dropdown-list">
+              <a href="#"> News </a>
+              <a href="#"> Our team </a>
+              <a href="#"> History </a>
+            </div>
+          </div>
         </li>
-        <li> Galeria </li>
-        <li> Kontakt </li>
+        <li> Gallery </li>
+        <li> Contact </li>
       </ul>
     </nav>
   </header>
@@ -42,7 +45,7 @@
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.
       </p>
-      <div class="button"> Zobacz więcej </div>
+      <div class="button"> Find Out More </div>
     </div>
     <div class="slider-arrow-right">
       <span> > </span>
@@ -52,14 +55,20 @@
   </section>
 
   <section class="gallery main-width">
-    <div class="gallery-item__one">
+    <div class="gallery-item__photoOne">
       <img src="images/box1_img.jpg">
+      <div class="gallery-item__title">
+        <p> Chair CLAIR </p>
+      </div>
     </div>
-    <div class="gallery-item__two">
+    <div class="gallery-item__photoTwo">
       <img src="images/box2_img.jpg">
+      <div class="gallery-item__title">
+        <p> Chair MARGARTIA </p>
+      </div>
     </div>
     <div class="gallery-text">
-      <h3> Find all inputs <hr> </h3>
+      <h3> Find all inputs </h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -78,7 +87,7 @@
   <section class="priceList">
     <div class="main-width">
 
-      <h3> Cennik <hr> </h3>
+      <h2> Price List </h2>
 
       <div class="priceList-item priceList-item__normal">
         <div class="priceList-circle">
@@ -94,10 +103,10 @@
           </p>
         </div>
         <div class="service">
-          <p class="service-one"> Zakup towaru + dowóz </p>
-          <p class="service-two"> Serwis </p>
+          <p class="service-bar__dkGrey"> Purchase + delivery </p>
+          <p class="service-bar__ltGrey"> Service </p>
         </div>
-        <div class="button"> Dołącz </div>
+        <div class="button"> Join </div>
       </div>
 
       <div class="priceList-item priceList-item__reverse">
@@ -114,11 +123,11 @@
           </p>
         </div>
         <div class="service">
-          <p class="service-three"> Zakup towaru + dowóz </p>
-          <p class="service-two"> Serwis </p>
-          <p class="service-three"> Gwarancja 5 lat </p>
+          <p class="service-bar__white"> Purchase + delivery </p>
+          <p class="service-bar__ltGrey"> Service </p>
+          <p class="service-bar__white"> Guarantee 5 years </p>
         </div>
-        <div class="button"> Dołącz </div>
+        <div class="button"> Join </div>
       </div>
 
       <div class="priceList-item priceList-item__normal">
@@ -135,12 +144,12 @@
           </p>
         </div>
         <div class="service">
-          <p class="service-one">> Zakup towaru + dowóz </p>
-          <p class="service-two"> Serwis </p>
-          <p class="service-one"> Gwarancja 5 lat </p>
-          <p class="service-two"> Porady Projektant </p>
+          <p class="service-bar__dkGrey"> Purchase + delivery </p>
+          <p class="service-bar__ltGrey"> Service </p>
+          <p class="service-bar__dkGrey"> Guarantee 5 years </p>
+          <p class="service-bar__ltGrey"> Designer Advice </p>
         </div>
-        <div class="button"> Dołącz </div>
+        <div class="button"> Join </div>
       </div>
 
     </div>
@@ -148,15 +157,15 @@
 
   <section class="contact">
     <div class="main-width">
-      <h3> Kontakt <hr> </h3>
+      <h2> Contact </h2>
 
       <div class="contact-form">
       <form>
-        <input type="text" name="imie" placeholder="Imię">
+        <input type="text" name="name" placeholder="Name">
         <br>
-        <input type="email" name="email" placeholder="mail">
+        <input type="email" name="email" placeholder="E-mail">
         <br>
-        <textarea cols="70" rows="7" placeholder="Wiadomość"> </textarea>
+        <textarea cols="70" rows="7" placeholder="Message"></textarea>
       </form>
     </div>
 
@@ -166,8 +175,8 @@
         </div>
         <div class="contact-submit__agree">
           <img src="images/form_ok.jpg">
-          <p> Zgadzam się na przetwarzanie danych osobowych </p>
-          <div class="button"> Wyślij </div>
+          <p> I agree to terms and condition of the website </p>
+          <div class="button"> Send </div>
         </div>
       </div>
     </div>
