@@ -52,7 +52,7 @@ header {
 }
 
 .logo span {
-  color: #3CB490;
+  color: #26c7a9;
 }
 
 .dropdown-menu {
@@ -67,19 +67,21 @@ header {
 
 .dropdown {
   position: relative;
+  padding-bottom: 1em;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     top: 35px;
+    left: 5px;
   }
 
 .dropdown-triangle {
   width: 0;
   margin: 0 auto;
-  border-left: 15px solid white;
-  border-right: 15px solid white;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
   border-bottom: 15px solid black;
   }
 
@@ -102,13 +104,13 @@ header {
 .slider {
   height: 500px;
   background: rgba(255,255,255,1);
-  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(64%, rgba(246,246,246,1)), color-stop(100%, rgba(224,224,224,1)));
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
-  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
-  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 64%, rgba(224,224,224,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0 );
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(209,208,214,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(209,208,214,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(209,208,214,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(209,208,214,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(209,208,214,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(209,208,214,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d0d6', GradientType=0 );
 }
 .slider-content {
   padding-top: 100px;
@@ -118,7 +120,7 @@ header {
 .slider-arrow-left, .slider-arrow-right {
   height: 400px;
   width: 50px;
-  color: #3CB490;
+  color: #26c7a9;
   font-size: 80px;
   font-weight: bold;
   line-height: 400px;
@@ -142,7 +144,7 @@ header {
 }
 
 .slider-text span {
-  color: #3CB490;
+  color: #26c7a9;
 }
 
 .slider-text p {
@@ -154,7 +156,7 @@ header {
   height:50px;
   border-radius: 1em;
   margin: 0 auto;
-  background-color: #3CB490;
+  background-color: #26c7a9;
   font-family: 'ralewaysemibold', Arial, sans-serif;
   line-height: 50px;
   color: white;
@@ -195,7 +197,7 @@ header {
 .gallery-item__title p {
   width: 150px;
   margin-left: 10px;
-  border-bottom: 6px solid #3CB490;
+  border-bottom: 6px solid #26c7a9;
   padding-bottom: 5px;
 }
 
@@ -210,7 +212,7 @@ header {
 
 .gallery-text h3 {
   width: 150px;
-  border-bottom: 6px solid #3CB490;
+  border-bottom: 6px solid #26c7a9;
   padding-bottom: 5px;
 }
 
@@ -222,12 +224,12 @@ header {
 
 .priceList{
   height: 800px;
-  background-color: #f6f6f6;
+  background-color: #f0f0f0;
 }
 .priceList h2 {
   padding-top: 1.5em;
   width: 300px;
-  border-bottom: 6px solid #3CB490;
+  border-bottom: 6px solid #26c7a9;
   padding-bottom: 5px;
   color: #9e9c9e;
   text-transform: uppercase;
@@ -251,7 +253,7 @@ header {
 .priceList-circle,
 .priceList-item__reverse
  .priceList-circle div {
-  border: 2px solid #3CB490;
+  border: 2px solid #26c7a9;
 }
 
 .priceList-circle {
@@ -264,81 +266,97 @@ header {
     background-color: white;
   }
 
-  .priceList-circle div {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #9e9c9e;
-  }
+.priceList-circle div {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #9e9c9e;
+}
 
-  .priceList-item__reverse .priceList-circle {
-    background-color: #3CB490;
+.priceList-item__reverse .priceList-circle {
+  background-color: #26c7a9;
+}
 
-  }
-  .priceList-item__reverse .priceList-circle div {
-    background-color: white;
-  }
+.priceList-item__reverse .priceList-circle div {
+  background-color: white;
+}
 
-  .priceList-item__normal {
-    background-color: white;
-  }
+.priceList-item__normal {
+  background-color: white;
+}
 
-  .priceList-item__reverse {
-    background-color: #3CB490;
-    border: 2px solid #3CB490;
-  }
+.priceList-item__reverse {
+  background-color: #26c7a9;
+  border: 2px solid #26c7a9;
+}
 
-  .priceList-item h3 {
-    text-align: center;
-    font-size: 20px;
-    margin: 40px auto;
-    text-transform: uppercase;
+.priceList-item h3 {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px auto;
+  text-transform: uppercase;
+}
 
-  }
-  .priceList-item__normal h3 {
-    color: #3CB490;
-  }
+.priceList-item__normal h3 {
+  color: #26c7a9;
+}
 
-  .priceList-item__reverse h3 {
-    color: white;
-  }
+.priceList-item__reverse h3 {
+  color: white;
+}
 
-  .price {
-    width: 120px;
-    height: 120px;
-    border: 2px solid #9e9c9e;
-    margin-top: 0;
-    border-radius: 50%;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-  }
-  .priceList-item__reverse .price{
-    border: 2px solid #3CB490;
-  }
+.price {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #9e9c9e;
+  margin-top: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
 
-  .price-nr {
-    color: #9e9c9e;
-    font-size: 40px;
-    margin: .4em 0 .2em;
-    text-align: center;
-  }
+.priceList-item__reverse .price{
+  border: 2px solid #26c7a9;
+}
 
-.price-nr sup {
+.price-nr, .price-nr__reverse {
+  font-size: 40px;
+  margin: .4em 0 .2em;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.price-nr {
+  color: #c2c2c2;
+}
+.price-nr__reverse {
+  color: #26c7a9;
+}
+
+.price-nr sup, .price-nr__reverse sup {
   font-size: 15px;
 }
 
- .price-month {
+ .price-month, .price-month__reverse {
   color: #9e9c9e;
   font-size: 15px;
   padding-top: 0;
   margin-top: 0;
   text-align: center;
+}
+
+.price-month {
+  color: #9e9c9e;
+}
+
+.price-month__reverse {
+  color: #26c7a9;
 }
 
 .service {
@@ -356,10 +374,10 @@ header {
 }
 
 .service-bar__dkGrey {
-  background-color: #d1d1d1;
+  background-color: #e3e3e3;
 }
 .service-bar__ltGrey {
-  background-color: #ededed;
+  background-color: #f0f0f0;
 }
 .service-bar__white {
   background-color: white;
@@ -375,7 +393,7 @@ header {
 
 .priceList-item__reverse .button {
   background-color: white;
-  color: #3CB490;
+  color: #26c7a9;
 }
 
 /*Contact part */
@@ -389,7 +407,7 @@ header {
 .contact h2 {
   padding-top: 1.5em;
   width: 300px;
-  border-bottom: 6px solid #3CB490;
+  border-bottom: 6px solid #26c7a9;
   padding-bottom: 5px;
   text-transform: uppercase;
 }
@@ -412,7 +430,7 @@ input, textarea {
   width:688px;
   padding: 10px 0 10px 10px;
   margin: 10px 0;
-  border: 1px solid #3CB490;
+  border: 1px solid #26c7a9;
   font-size: 20px;
 }
 
@@ -426,7 +444,7 @@ textarea {
 }
 
 .contact-submit__agree img {
-  border: 1px solid #3CB490;
+  border: 1px solid #26c7a9;
   margin-left: 30px;
 }
 
@@ -440,6 +458,10 @@ textarea {
 .contact-submit__agree .button {
   width:auto;
   font-size: 20px;
+}
+
+.contact-submit__agree .button:hover {
+  font-size: 24px;
 }
 
 /* Footer section */
@@ -461,7 +483,6 @@ footer span {
 .social-media {
   margin-left: 40px;
 }
-
 
 .logo-bottom {
   width: 200px;
