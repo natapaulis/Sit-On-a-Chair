@@ -101,6 +101,7 @@ header {
   display: block;
 }
 
+/
 .slider {
   height: 500px;
   background: rgba(255,255,255,1);
@@ -239,13 +240,13 @@ header {
   width: 350px;
   height: 600px;
   margin-top: 40px;
-  border: 2px solid #9e9c9e;
+  border: 2px solid #c2c2c2;
   position: relative;
   float:left;
   margin-left: 1em;
 }
 .priceList-circle, .priceList-circle div {
-  border: 2px solid #9e9c9e;
+  border: 2px solid #c2c2c2;
   border-radius: 50%;
 }
 
@@ -273,7 +274,7 @@ header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #9e9c9e;
+  background-color: #c2c2c2;
 }
 
 .priceList-item__reverse .priceList-circle {
@@ -311,7 +312,7 @@ header {
 .price {
   width: 120px;
   height: 120px;
-  border: 2px solid #9e9c9e;
+  border: 2px solid #c2c2c2;
   margin-top: 0;
   border-radius: 50%;
   position: absolute;
@@ -486,7 +487,11 @@ footer span {
 
 .logo-bottom {
   width: 200px;
-  margin-left: 25px;
+  margin-left: 15px;
   text-transform: uppercase;
   text-align: right;
+}
+
+.logo-bottom b {
+  font-family: 'ralewaybold', 'Arial Bold', sans-serif;
 }
