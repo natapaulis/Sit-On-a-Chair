@@ -34,7 +34,7 @@ body {
 }
 
 .main-width {
-  width:90%;
+  width:1150px;
   margin: 0 auto;
 }
 
@@ -101,7 +101,6 @@ header {
   display: block;
 }
 
-/
 .slider {
   height: 500px;
   background: rgba(255,255,255,1);
@@ -146,6 +145,7 @@ header {
 
 .slider-text span {
   color: #26c7a9;
+  font-family: 'ralewaysemibold', Arial, sans-serif;
 }
 
 .slider-text p {
@@ -200,6 +200,7 @@ header {
   margin-left: 10px;
   border-bottom: 6px solid #26c7a9;
   padding-bottom: 5px;
+  font-family: 'ralewaysemibold', Arial, sans-serif;
 }
 
 .gallery-text {
@@ -215,6 +216,7 @@ header {
   width: 150px;
   border-bottom: 6px solid #26c7a9;
   padding-bottom: 5px;
+  font-family: 'ralewaysemibold', Arial, sans-serif;
 }
 
 .gallery-text p {
