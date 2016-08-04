@@ -134,6 +134,10 @@ header {
   padding-left: 70px;
 }
 
+.slider-arrow-right span {
+  padding-left: 15px;
+}
+
 .slider-text {
   height: 337px;
   width: 400px;
