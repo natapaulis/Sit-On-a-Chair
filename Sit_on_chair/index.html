@@ -200,70 +200,77 @@
     </div>
   </section>
 
-  <section class = "order">
-    <div class="main-width">
+  <section class="application">
+      <div class="main-width">
+          <section class="choice_part inline">
+              <div>
+                  <h2>SKOMPONUJ SWOJE KRZESŁO</h2>
+              </div>
 
-      <div class="order-dropdown">
-        <h2> Create your own chair </h2>
-        <form>
-          <select name="chairs">
-            <option selected> Choose model </option>
-            <option value ="200"> Chair Clair </option>
-            <option value="150"> Chair Margarita </option>
-            <option value="300"> Chair Selena </option>
-          </select>
-          <br>
+              <div class="form">
+                  <div class="drop_down_list">
+                      <span class="list_label title_name">Wybierz rodzaj</span>
+                      <span class="list_arrow"></span>
+                      <ul class="list_panel">
+                          <li data-price="200">Clair</li>
+                          <li data-price="150">Margarita</li>
+                          <li data-price="250">Selena</li>
+                      </ul>
+                  </div>
+                  <div class="drop_down_list">
+                      <span class="list_label color_name">Wybierz kolor</span>
+                      <span class="list_arrow"></span>
+                      <ul class="list_panel">
+                          <li data-price="20">Czerwony</li>
+                          <li data-price="10">Czarny</li>
+                          <li data-price="30">Pomarańczowy</li>
+                      </ul>
+                  </div>
+                  <div class="drop_down_list">
+                      <span class="list_label pattern_name">Wybierz materiał</span>
+                      <span class="list_arrow"></span>
+                      <ul class="list_panel">
+                          <li data-price="20">Tkanina</li>
+                          <li data-price="100">Skóra</li>
+                      </ul>
+                  </div>
+                  <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" name="transport" data-transport-price ="80"/>
+                    <label for="transport"> <span></span> Transport <label>
+                  </div>
+                  <!--<div class="checkbox"></div>-->
+                  <!--<span class="list_label inline_text">Transport</span>-->
+              </div>
+          </section>
 
-          <select name="color">
-            <option selected> Choose color </option>
-            <option value ="10"> Red </option>
-            <option value="10"> Orange </option>
-            <option value="10"> Black </option>
-          </select>
-          <br>
+          <section class="image_part inline">
+              <img src="images/red_chair.png">
+          </section>
 
-          <select name="material">
-            <option selected> Choose color </option>
-            <option value ="20"> Fabric </option>
-            <option value="100"> Leather </option>
-          </select>
-          <div class="transport">
-            <input type="checkbox" id="transport" name="transport" value ="80"/>
-            <label for="transport"> <span></span> Transport <label>
-          </div>
-        </form>
+          <section class="summary_part inline">
+              <div class="align_right">
+                  <h2>PODSUMOWANIE</h2>
+              </div>
+
+              <div class="summary_panel">
+                  <div class="panel_left">
+                      <h4 class="title">Twój fotel</h4>
+                      <span class="color"></span>
+                      <span class="pattern"></span>
+                      <span class="transport"></span>
+                  </div>
+                  <div class="panel_right">
+                      <h4 class="title value"></h4>
+                      <span class="color value"></span>
+                      <span class="pattern value"></span>
+                      <span class="transport value"></span>
+                  </div>
+                  <div class="sum_label">SUMA</div>
+                  <div class="sum"><strong></strong></div>
+              </div>
+              <a href="" class="green_button">Zamawiam</a>
+          </section>
       </div>
-
-      <div class="order-photo">
-        <img id="clair" src="images/red.png">
-        <img id="margarita" src="images/orange.png">
-        <img id="selena" src="images/black_chair.png">
-      </div>
-
-      <div class="order-sumup">
-        <h2> Your Order </h2>
-        <table>
-          <tr>
-            <td id="chair-name"> Your Chair </td>
-            <td id="price-name"> </td>
-          </tr>
-          <tr>
-            <td id="chair-color"> </td>
-            <td id="price-color"> </td>
-          </tr>
-          <tr>
-            <td id="chair-material"> </td>
-            <td id="price-material"> </td>
-          </tr>
-          <tr>
-            <td id="sum-name"> Total </td>
-            <td id="sum-price"> </td>
-          </tr>
-        </table>
-        <div class="button"> Order </div>
-      </div>
-
-    </div>
   </section>
 
   <section class="contact">
