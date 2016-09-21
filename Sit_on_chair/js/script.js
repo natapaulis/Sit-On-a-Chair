@@ -75,6 +75,9 @@ document.addEventListener("DOMContentLoaded", function(){
   var panelLeft = document.querySelector(".panel_left");
   var panelRight = document.querySelector(".panel_right");
   var summaryPanel = document.querySelector(".summary_panel");
+  var clair = document.querySelector("#clair");
+  var margarita = document.querySelector("#margarita");
+  var selena = document.querySelector("#selena");
   var count = 0;
 
   for(var i = 0, len = arrow.length; i < len; i++){
@@ -115,6 +118,24 @@ document.addEventListener("DOMContentLoaded", function(){
             panelLeft.style.height = "175px";
             panelRight.style.height = "175px";
          }
+
+      if(name === "Red"){
+        clair.style.display = "block";
+        clair.style.marginLeft = "38px";
+        margarita.style.display = "none";
+        selena.style.display = "none";
+
+      } else if (name == "Black") {
+          selena.style.display = "block";
+          selena.style.marginLeft = "0";
+          clair.style.display = "none";
+          margarita.style.display = "none";
+        }  else if (name == "Orange") {
+             margarita.style.display = "block";
+             margarita.style.marginLeft = "0";
+             clair.style.display = "none";
+             selena.style.display = "none";
+          }
 
     });
   }

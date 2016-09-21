@@ -539,6 +539,9 @@ header {
   margin-left: 38px;
 }
 
+#margarita, #selena {
+  display: none;
+}
 
 .order .green_bell {
   background-color: #24baa0;
