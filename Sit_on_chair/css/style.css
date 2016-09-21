@@ -436,12 +436,17 @@ header {
 
 /* Order part */
 
-.application {
+.order {
   background-color: #f9f9f9;
-  padding:30px 0;
+  clear: both;
+  height: 500px;
 }
 
-.application h2 {
+.order .main-width {
+  height: 500px;
+}
+
+.order h2 {
   padding-top: 1.5em;
   width: 300px;
   border-bottom: 6px solid #26c7a9;
@@ -450,7 +455,7 @@ header {
   text-transform: uppercase;
 }
 
-.application div.align_right{
+.order div.align_right{
   text-align: right;
 }
 
@@ -462,6 +467,10 @@ header {
   vertical-align: top;
 }
 
+.choice_part {
+  padding-left: 0px;
+  padding-right: 50px;
+}
 
 .form {
   margin-top:50px;
@@ -519,18 +528,29 @@ header {
   margin-left: 15px;
   color: #aeaeae;
 }
+
+.image_part {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .image_part img{
   margin-top: 110px;
   margin-left: 38px;
 }
 
 
-.application .green_bell {
+.order .green_bell {
   background-color: #24baa0;
   width: 200px;
   height: 6px;
   display: inline-block;
   margin: 5px 0 5px 0;
+}
+
+.summary_part {
+  padding-left: 90px;
+  padding-right: 0;
 }
 
 .summary_panel {
@@ -542,21 +562,16 @@ header {
 
 }
 
-.application .green_button {
-  background-color: #27c7ab;
-  color: white;
-  text-align:center;
-  text-transform: uppercase;
-  width: 200px;
-  padding: 10px 30px;
-  font-size: 24px;
-  display: inline-block;
-  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+.order .button {
+  width:auto;
+  font-size: 20px;
   margin-top: 20px;
-  margin-left: 29px;
-  border-radius: 8px;
-  text-decoration: none;
 }
+
+.order .button:hover {
+  font-size: 24px;
+}
+
 .panel_left {
   display: inline-block;
   width: 185px;
@@ -595,6 +610,7 @@ header {
   color: #24baa0;
   margin-top:10px;
 }
+
 .sum_label{
   display: inline-block;
   width: 185px;
