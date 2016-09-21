@@ -99,9 +99,6 @@ header {
   padding: 10px 15px 10px 15px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 /* Slider with photo and text */
 
@@ -175,6 +172,18 @@ header {
 
 .button:hover {
   font-size: 20px;
+}
+
+.slider-parts ul {
+    list-style: none;
+}
+
+.slider-parts li {
+    display: none;
+}
+
+.slider-parts .visible {
+    display: inline-flex;
 }
 
 /* Gallery section */
@@ -425,12 +434,80 @@ header {
   color: #26c7a9;
 }
 
+/* Order part */
+
+.order {
+  clear: both;
+  height: 500px;
+  color:  #9e9c9e;
+}
+
+.contact .main-width {
+  height: 700px;
+}
+
+.order-dropdown, .order-photo {
+  float: left;
+  width: 350px;
+}
+.order-sumup {
+  float: right;
+  width: 350px;
+  }
+
+.order h2 {
+  padding-top: 1.5em;
+  width: 350px;
+  border-bottom: 6px solid #26c7a9;
+  padding-bottom: 5px;
+  color: black;
+  text-transform: uppercase;
+}
+
+select {
+  width: 350px;
+  padding: 10px 0 10px 10px;
+  margin: 10px 0;
+  border: 1px solid #26c7a9;
+  font-size: 20px;
+  color:  #9e9c9e;
+}
+
+.transport input[type=checkbox] {
+	display: none;
+}
+
+.transport input[type="checkbox"] + label span {
+    display:inline-block;
+    width: 48px;
+    height: 40px;
+    border: 1px solid #26c7a9;
+	  cursor: pointer;
+    vertical-align: middle;
+}
+
+.transport label {
+  font-size: 20px;
+}
+
+.transport input[type=checkbox]:checked + label span{
+  background-image: url("../images/form_ok.jpg");
+}
+
+.transport{
+  padding-top:10px;
+}
+#margarita, #selena {
+  display: none;
+}
+
 /*Contact part */
 
 .contact {
   clear: both;
   height: 500px;
   color: #9e9c9e;
+  background-color: #f0f0f0;
 }
 
 .contact .main-width {
@@ -460,13 +537,14 @@ header {
   height: 400px;
 }
 
-input, textarea {
+.contact-input {
   width:688px;
   padding: 10px 0 10px 10px;
   margin: 10px 0;
   border: 1px solid #26c7a9;
   font-size: 20px;
 }
+
 
 textarea {
   resize: none;
