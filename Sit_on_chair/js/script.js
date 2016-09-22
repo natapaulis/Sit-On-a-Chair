@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function(){
   var clair = document.querySelector("#clair");
   var margarita = document.querySelector("#margarita");
   var selena = document.querySelector("#selena");
-  var count = 0;
 
   for(var i = 0, len = arrow.length; i < len; i++){
     arrow[i].addEventListener("click", function(){
@@ -96,28 +95,26 @@ document.addEventListener("DOMContentLoaded", function(){
       var name = this.innerText;
       var label = this.parentNode.parentNode.children[0];
       var price = Number(this.dataset.price);
+
       label.innerText = name;
 
-      if(label.classList.contains("title_name") ){
+      if(label.classList.contains("title_name")){
         chairChosen.innerText = name;
         value[0].innerText = price;
-        count += price;
-        sum.innerText = count;
       } else if(label.classList.contains("color_name")){
           colorChosen[0].innerText = name;
           value[1].innerText = price;
-          count += price;
-          sum.innerText = count;
           panelLeft.style.height = "150px";
           panelRight.style.height = "150px";
         } else {
             patternChosen[0].innerText = name;
             value[2].innerText = price;
-            count += price;
-            sum.innerText = count;
             panelLeft.style.height = "175px";
             panelRight.style.height = "175px";
          }
+
+      sum.innerText = Number(value[0].innerText) + Number(value[1].innerText) + Number(value[2].innerText) + Number(value[3].innerText);
+
 
       if(name === "Red"){
         clair.style.display = "block";
@@ -136,8 +133,8 @@ document.addEventListener("DOMContentLoaded", function(){
              clair.style.display = "none";
              selena.style.display = "none";
           }
-
     });
+
   }
 
   transport.addEventListener("click", function(){
@@ -145,19 +142,16 @@ document.addEventListener("DOMContentLoaded", function(){
     if(transport.checked){
       transportChosen[0].innerText = "Transport";
       value[3].innerText = transportVal;
-      count += transportVal;
-      sum.innerText = count;
       panelLeft.style.height = "200px";
       panelRight.style.height = "200px";
       summaryPanel.style.height = "230px"
-    }
-
-    if(!transport.checked){
+    } else {
       transportChosen[0].innerText = "";
       value[3].innerText = "";
-      count -= transportVal;
-      sum.innerText = count;
     }
+
+    sum.innerText = Number(value[0].innerText) + Number(value[1].innerText) + Number(value[2].innerText) + Number(value[3].innerText);
+
   });
 
 });
