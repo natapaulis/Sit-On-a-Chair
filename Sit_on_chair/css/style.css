@@ -439,11 +439,11 @@ header {
 .order {
   background-color: #f9f9f9;
   clear: both;
-  height: 500px;
+  height: 550px;
 }
 
 .order .main-width {
-  height: 500px;
+  height: 550px;
 }
 
 .order h2 {
@@ -458,7 +458,6 @@ header {
 .order div.align_right{
   text-align: right;
 }
-
 
 .inline {
   display:inline-block;
@@ -490,7 +489,6 @@ header {
   color: #e2e2e2;
   font-family: 'ralewaylight', Arial, Tahoma, sans-serif;
 }
-
 
 .checkbox {
   position: relative;
@@ -534,7 +532,7 @@ header {
   padding-right: 50px;
 }
 
-.image_part img{
+.image_part img {
   margin-top: 110px;
   margin-left: 38px;
 }
@@ -552,17 +550,17 @@ header {
 }
 
 .summary_part {
-  padding-left: 90px;
+  width: 320px;
+  padding-left: 70px;
   padding-right: 0;
 }
 
 .summary_panel {
   background-color: white;
-  width:100%;
+  width:300px;
   height:195px;
   padding:10px;
   margin-top: 50px;
-
 }
 
 .order .button {
@@ -682,6 +680,7 @@ header {
 }
 
 .contact h2 {
+  margin-top: 0;
   padding-top: 1.5em;
   width: 300px;
   border-bottom: 6px solid #26c7a9;

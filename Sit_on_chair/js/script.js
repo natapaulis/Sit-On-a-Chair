@@ -65,9 +65,9 @@ document.addEventListener("DOMContentLoaded", function(){
   var list = document.querySelectorAll(".list_panel li");
   var label = document.querySelectorAll(".list_label");
   var chairChosen = document.querySelector(".title");
-  var colorChosen = document.querySelectorAll(".color");
-  var patternChosen = document.querySelectorAll(".pattern");
-  var transportChosen = document.querySelectorAll(".transport");
+  var colorChosen = document.querySelector(".color");
+  var patternChosen = document.querySelector(".pattern");
+  var transportChosen = document.querySelector(".transport");
   var value = document.querySelectorAll(".value");
   var sum = document.querySelector(".sum");
   var transport = document.querySelector('#transport');
@@ -97,23 +97,28 @@ document.addEventListener("DOMContentLoaded", function(){
       var price = Number(this.dataset.price);
 
       label.innerText = name;
+      label.style.color = "#9e9c9e";
 
       if(label.classList.contains("title_name")){
         chairChosen.innerText = name;
         value[0].innerText = price;
       } else if(label.classList.contains("color_name")){
-          colorChosen[0].innerText = name;
+          colorChosen.innerText = name;
           value[1].innerText = price;
-          panelLeft.style.height = "150px";
-          panelRight.style.height = "150px";
+          panelLeft.style.height = "200px";
+          panelRight.style.height = "200px";
+          summaryPanel.style.height = "230px";
+          summaryPanel.style.paddingBottom = "30px";
         } else {
-            patternChosen[0].innerText = name;
+            patternChosen.innerText = name;
             value[2].innerText = price;
-            panelLeft.style.height = "175px";
-            panelRight.style.height = "175px";
+            panelLeft.style.height = "200px";
+            panelRight.style.height = "200px";
+            summaryPanel.style.height = "230px";
+            summaryPanel.style.paddingBottom = "30px";
          }
 
-      sum.innerText = Number(value[0].innerText) + Number(value[1].innerText) + Number(value[2].innerText) + Number(value[3].innerText);
+      sum.innerText = Number(value[0].innerText) + Number(value[1].innerText) + Number(value[2].innerText) + Number(value[3].innerText) + "zł";
 
 
       if(name === "Red"){
@@ -121,18 +126,17 @@ document.addEventListener("DOMContentLoaded", function(){
         clair.style.marginLeft = "38px";
         margarita.style.display = "none";
         selena.style.display = "none";
-
-      } else if (name == "Black") {
-          selena.style.display = "block";
-          selena.style.marginLeft = "0";
-          clair.style.display = "none";
-          margarita.style.display = "none";
-        }  else if (name == "Orange") {
-             margarita.style.display = "block";
-             margarita.style.marginLeft = "0";
-             clair.style.display = "none";
-             selena.style.display = "none";
-          }
+      }  else if (name == "Black") {
+           selena.style.display = "block";
+           selena.style.marginLeft = "0";
+           clair.style.display = "none";
+           margarita.style.display = "none";
+         }  else if (name == "Orange") {
+              margarita.style.display = "block";
+              margarita.style.marginLeft = "0";
+              clair.style.display = "none";
+              selena.style.display = "none";
+            }
     });
 
   }
@@ -140,17 +144,18 @@ document.addEventListener("DOMContentLoaded", function(){
   transport.addEventListener("click", function(){
 
     if(transport.checked){
-      transportChosen[0].innerText = "Transport";
+      transportChosen.innerText = "Transport";
       value[3].innerText = transportVal;
       panelLeft.style.height = "200px";
       panelRight.style.height = "200px";
-      summaryPanel.style.height = "230px"
+      summaryPanel.style.height = "230px";
+      summaryPanel.style.paddingBottom = "30px";
     } else {
-      transportChosen[0].innerText = "";
+      transportChosen.innerText = "";
       value[3].innerText = "";
     }
 
-    sum.innerText = Number(value[0].innerText) + Number(value[1].innerText) + Number(value[2].innerText) + Number(value[3].innerText);
+    sum.innerText = Number(value[0].innerText) + Number(value[1].innerText) + Number(value[2].innerText) + Number(value[3].innerText) + "zł";
 
   });
 
