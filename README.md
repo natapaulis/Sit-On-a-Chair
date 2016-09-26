@@ -1,1 +1,1 @@
-# workshops
+# workshops. Sit On Chair website
