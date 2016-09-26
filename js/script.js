@@ -194,7 +194,10 @@ document.addEventListener("DOMContentLoaded", function(){
             e.preventDefault();
             notAgreed = "Your need to agree to condition";
         }
-        alert(wrongName + "\n" + wrongEmail + "\n" + notAgreed);
+        
+        if(wrongName !=="" || wrongEmail !=="" || notAgreed !==""){
+            alert(wrongName + "\n" + wrongEmail + "\n" + notAgreed);
+        }
     });
     
 });
