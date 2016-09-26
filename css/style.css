@@ -503,7 +503,7 @@ header {
     width: 48px;
     height: 40px;
     border: 1px solid #26c7a9;
-	  cursor: pointer;
+    cursor: pointer;
     vertical-align: middle;
 }
 
@@ -670,13 +670,13 @@ header {
 
 .contact {
   clear: both;
-  height: 500px;
+  height: 550px;
   color: #9e9c9e;
   background-color: #f0f0f0;
 }
 
 .contact .main-width {
-  height: 500px;
+  height: 550px;
 }
 
 .contact h2 {
@@ -711,30 +711,26 @@ header {
   font-size: 20px;
 }
 
-
 textarea {
   resize: none;
+  height: 200px;
 }
 
-.contact-submit__photo img {
-  display: block;
-  margin: -5px auto 16px;
+.contact-submit__agree .checkbox input[type="checkbox"] + label span {
+    background-color: white;
 }
 
-.contact-submit__agree img {
-  border: 1px solid #26c7a9;
-  margin-left: 30px;
-}
-
-.contact-submit__agree p {
+.contact-submit__agree .checkbox label {
   display: inline-block;
-  width: 250px;
-  margin-top: 0px;
-  margin-left: 10px;
+  font-size: 19px;
+  color: #9e9c9e;
+  text-align: center;
+  line-height: 10px;
+  padding-top: 0;
 }
 
 .contact-submit__agree .button {
-  width:auto;
+  width:300px;
   font-size: 20px;
 }
 
@@ -744,15 +740,17 @@ textarea {
 
 /* Footer section */
 
-footer {
+footer {  
   clear: both;
   color: #9e9c9e;
 }
+
 footer span,
 .social-media,
 .logo-bottom {
   display: inline-block;
   letter-spacing: 2px;
+  padding-top: 20px;
 }
 
 footer span {
